@@ -1,0 +1,216 @@
+@import url(//db.onlinewebfonts.com/c/6cdd375ebdbdcba963bbc5f0362702cc?family=ImaginaryFriendBBW00-Bold);
+
+@font-face {
+    font-family: 'ImaginaryFriendBBW00-Bold'; 
+    src: url("//db.onlinewebfonts.com/t/6cdd375ebdbdcba963bbc5f0362702cc.eot"); 
+    src: url("//db.onlinewebfonts.com/t/6cdd375ebdbdcba963bbc5f0362702cc.eot?#iefix") format("embedded-opentype"), 
+    url("//db.onlinewebfonts.com/t/6cdd375ebdbdcba963bbc5f0362702cc.woff2") format("woff2"), 
+    url("//db.onlinewebfonts.com/t/6cdd375ebdbdcba963bbc5f0362702cc.woff") format("woff"), 
+    url("//db.onlinewebfonts.com/t/6cdd375ebdbdcba963bbc5f0362702cc.ttf") format("truetype"), 
+    url("//db.onlinewebfonts.com/t/6cdd375ebdbdcba963bbc5f0362702cc.svg#ImaginaryFriendBBW00-Bold") format("svg"); 
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.panel {
+  margin-top: 50px;
+}
+
+.panel-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  overflow: hidden;
+  height: 100vh;  /* Ajuste de acordo com suas necessidades */
+}
+
+.main, .submain, .text {
+    height: 100%;
+    width: 700px;
+    font-family: 'ImaginaryFriendBBW00-Bold';
+    font-weight: 900;
+    opacity: 0;
+    text-transform: uppercase;
+    text-align: center;
+    z-index: 0;
+}
+
+.main {
+    font-size: 72px;
+    line-height: 58px;
+    color: #00F9A0;
+    -webkit-animation: main_shadow 8s ease;
+    animation: main_shadow 8s ease;
+}
+
+.main video{
+    height: 3em;
+    -webkit-animation: main_video 8s ease;
+    animation: main_video 8s ease;
+}
+
+.submain {
+    margin-top: 10px;
+    font-size: 32px;
+    line-height: 36px;
+    color: #B441F6; 
+    -webkit-animation: sub_shadow 8s ease;
+    animation: sub_shadow 8s ease;
+}
+
+.text {
+    font-size: 16px;
+    line-height: 18px;
+    color: #ffffff; 
+    -webkit-animation: text_shadow 8s ease;
+    animation: text_shadow 8s ease;
+}
+
+.text img{
+    height: 1em;
+}
+
+.main strong, .submain strong {
+    z-index: 1;
+    -webkit-animation: shadow_strong 8s ease, color-change 1s infinite;
+    animation: shadow_strong 8s ease, color-change 1s infinite;
+}
+
+@keyframes color-change {
+    0% { color: #F7971E; }
+    50% { color: #FFD200; }
+    100% { color: #F7971E; }
+}
+
+@keyframes main_shadow {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  55% {
+    text-shadow: -1px 1px 0 #217A58, -2px 2px 0 #217A58, -3px 3px 0 #217A58,
+      -4px 4px 0 #217A58, -5px 5px 0 #217A58;
+    transform: translateX(5px) translateY(-5px);
+  }
+
+  80% {
+    text-shadow: -1px 1px 0 #217A58, -2px 2px 0 #217A58, -3px 3px 0 #217A58,
+      -4px 4px 0 #217A58, -5px 5px 0 #217A58;
+    transform: translateX(5px) translateY(-5px);
+  }
+
+  90% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    text-shadow: none;
+    transform: none;
+  }
+}
+
+@keyframes shadow_strong {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  55% {
+    text-shadow: -1px 1px 0 #865A00, -2px 2px 0 #865A00, -3px 3px 0 #865A00,
+      -4px 4px 0 #865A00, -5px 5px 0 #865A00;
+    transform: translateX(5px) translateY(-5px);
+  }
+
+  80% {
+    text-shadow: -1px 1px 0 #865A00, -2px 2px 0 #865A00, -3px 3px 0 #865A00,
+      -4px 4px 0 #865A00, -5px 5px 0 #865A00;
+    transform: translateX(5px) translateY(-5px);
+  }
+
+  90% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    text-shadow: none;
+    transform: none;
+  }
+}
+@keyframes sub_shadow {
+  0% {
+    opacity: 0;
+    text-shadow: none;
+    transform: none;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  55% {
+    text-shadow: -1px 1px 0 #5D00C4, -2px 2px 0 #5D00C4, -3px 3px 0 #5D00C4,
+      -4px 4px 0 #5D00C4, -5px 5px 0 #5D00C4;
+    transform: translateX(5px) translateY(-5px);
+  }
+
+  80% {
+    text-shadow: -1px 1px 0 #5D00C4, -2px 2px 0 #5D00C4, -3px 3px 0 #5D00C4,
+      -4px 4px 0 #5D00C4, -5px 5px 0 #5D00C4;
+    transform: translateX(5px) translateY(-5px);
+  }
+  90% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    text-shadow: none;
+    transform: none;
+  }
+}
+@keyframes text_shadow {
+  0% {
+    opacity: 0;
+    text-shadow: none;
+    transform: none;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  55% {
+    text-shadow: -1px 1px 0 #4d4d4d, -2px 2px 0 #4d4d4d, -3px 3px 0 #4d4d4d,
+      -4px 4px 0 #4d4d4d, -5px 5px 0 #4d4d4d;
+    transform: translateX(5px) translateY(-5px);
+  }
+
+  80% {
+    text-shadow: -1px 1px 0 #4d4d4d, -2px 2px 0 #4d4d4d, -3px 3px 0 #4d4d4d,
+      -4px 4px 0 #4d4d4d, -5px 5px 0 #4d4d4d;
+    transform: translateX(5px) translateY(-5px);
+  }
+
+  90% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    text-shadow: none;
+    transform: none;
+  }
+}
